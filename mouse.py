@@ -69,3 +69,14 @@ if do:
     elif "pause" in received_message:
         pass
 """
+"""from googletrans import Translator
+
+translator=Translator(service_urls=["translate.google.com"])
+translation1=translator.translate("Hello, world",dest="ru")
+print(translation1.text)"""
+
+from deep_translator import GoogleTranslator
+
+translator = GoogleTranslator(source='auto', target='ar')
+result = translator.translate("Hello, world")
+print(result)
