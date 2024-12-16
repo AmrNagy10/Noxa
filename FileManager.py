@@ -1,27 +1,20 @@
 import os
-
-Downloads = "/home/amr-nagy/Downloads"
-Documents = "/home/amr-nagy/Documents"
-Pictures = "/home/amr-nagy/Pictures"
-Telegram = "/home/amr-nagy/Downloads/Telegram Desktop"
-Videos = "/home/amr-nagy/Videos"
-Music = "/home/amr-nagy/Music"
-
+from main import vars
 
 class FileManager:
     def __init__(self, getFrom: str):
         if getFrom == "Downloads":
-            self.path = Downloads
+            self.path = vars("Downloads")
         elif getFrom == "Documents":
-            self.path = Documents
+            self.path = vars("Documents")
         elif getFrom == "Pictures":
-            self.path = Pictures
+            self.path = vars("Pictures")
         elif getFrom == "Videos":
-            self.path = Videos
+            self.path = vars("Videos")
         elif getFrom == "Music":
-            self.path = Music
+            self.path = vars("Music")
         elif getFrom == "Telegram":
-            self.path = Telegram
+            self.path = vars("Telegram")
 
     def getpath(self, file: str):
         for filename in os.listdir(self.path):
