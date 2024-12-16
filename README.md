@@ -13,6 +13,8 @@ Noxa is a powerful and flexible bot designed for remote control of a computer. I
 
 ### Prerequisites
 - Python 3.8 or later
+- Create ".env" file with your data
+- Creat "bot.log" file
 - Required libraries (see `requirements.txt`)
 
 ### Installation
