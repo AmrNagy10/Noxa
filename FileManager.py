@@ -1,8 +1,9 @@
 import os
-from main import vars
+from main import Getmainpath, vars
 
 class FileManager:
     def __init__(self, getFrom: str):
+        Getmainpath(getFrom)
         if getFrom == "Downloads":
             self.path = vars("Downloads")
         elif getFrom == "Documents":
