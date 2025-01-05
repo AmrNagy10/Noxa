@@ -22,3 +22,6 @@ Noxa is a powerful and flexible bot designed for remote control of a computer. I
    ```bash
    git clone https://github.com/AmrNagy10/Noxa.git
    cd Noxa
+2. Run
+   ```bash
+   python3 Run.py
