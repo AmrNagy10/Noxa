@@ -16,6 +16,8 @@ class FileManager:
             self.path = vars("Music")
         elif getFrom == "Telegram":
             self.path = vars("Telegram")
+        elif getFrom == "NoxaDownloads":
+            self.path = vars("NoxaDownloads")
 
     def getpath(self, file: str):
         for filename in os.listdir(self.path):

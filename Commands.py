@@ -1,4 +1,6 @@
+import os
 import webbrowser
+import requests
 from sender import Sender
 from pytube import Search
 from yt_dlp import YoutubeDL
@@ -53,3 +55,10 @@ async def Getfrom(path):
 async def Askai(message):
     responce = Ai(message).speakwithai()
     await Sender(massage=responce).send_message()
+
+async def SaveImages(photo_file, Savepath):
+    filename = photo_file.file_path.split('/')
+    save_path = os.path.join(Savepath, filename[-1])
+    with open(save_path, 'wb') as file:
+        file.write(requests.get(photo_file.file_path).content)
+    await Sender(massage=f"Photo downloaded successfully at: {save_path}").send_message()
