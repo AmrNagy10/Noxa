@@ -25,3 +25,19 @@ Noxa is a powerful and flexible bot designed for remote control of a computer. I
 2. Run
    ```bash
    python3 Run.py
+
+### Run
+1. Enter the data of each :
+   ```bash
+   CHAT_ID=,
+   GEMINI_API_KEY=,
+   TELEGRAM_BOT_TOKEN="",
+   in ".env" file
+2. Download requirements:
+   ```bash
+   pip install requirements.txt -y
+3. in treminal:
+   ```bash
+   python3 Run.py
+### Example of use:
+[Screencast from 2025-01-20 23-38-37.webm](https://github.com/user-attachments/assets/54be0636-2266-4fa0-82eb-a9d6ef69e040)
