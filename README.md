@@ -1,4 +1,4 @@
-# Noxa Bot (0.2)
+# Noxa Bot (0.4)
 
 Noxa is a powerful and flexible bot designed for remote control of a computer. It allows users to interact with their systems seamlessly, whether to automate tasks, retrieve information, or manage files remotely.
 
